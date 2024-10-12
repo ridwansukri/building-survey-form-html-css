@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Evaluasi Hasil Guru BK</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="background">
+    <div class="container">
+        <header>
+            <h1 id="title">Evaluasi Hasil Layanan BK</h1>
+            <p id="description">Silakan isi formulir evaluasi ini untuk memberikan umpan balik terhadap layanan yang
+                diberikan oleh Guru BK</p>
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
+            </div>
+
+            <div class="form-group">
+                <label id="nis-label" for="nis">NIS:</label>
+                <input type="number" id="nis" name="nis" placeholder="Masukkan NIS kamu" required>
+            </div>
+
+            <div class="form-group">
+                <label id="class-label" for="classroom">Kelas:</label>
+                <input type="text" id="classroom" name="classroom" placeholder="Masukkan kelas kamu" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Usia:</label>
+                <input type="number" id="number" name="age" min="12" max="18" placeholder="Masukkan usia kamu" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Jenis Layanan yang Diterima:</label>
+                <select id="dropdown" name="service-type" required>
+                    <option value="" disabled selected>Pilih jenis layanan</option>
+                    <option value="klasikal">Bimbingan Klasikal</option>
+                    <option value="kelompok">Bimbingan Kelompok</option>
+                    <option value="kons-individu">Konseling Individu</option>
+                    <option value="kons-kelompok">Konseling Kelompok</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Seberapa puas kamu dengan layanan yang diberikan?</p>
+                <label><input type="radio" name="satisfaction" value="1" required> Sangat Tidak Puas</label>
+                <label><input type="radio" name="satisfaction" value="2"> Tidak Puas</label>
+                <label><input type="radio" name="satisfaction" value="3"> Netral</label>
+                <label><input type="radio" name="satisfaction" value="4"> Puas</label>
+                <label><input type="radio" name="satisfaction" value="5"> Sangat Puas</label>
+            </div>
+
+            <div class="form-group">
+                <p>Aspek apa yang menurut kamu perlu ditingkatkan terhadap Guru BK? (Pilih satu atau lebih yang menurut
+                    kamu perlu ditingkatkan)</p>
+                <label><input type="checkbox" name="improvement" value="communication"> Komunikasi</label>
+                <label><input type="checkbox" name="improvement" value="knowledge"> Pengetahuan</label>
+                <label><input type="checkbox" name="improvement" value="empathy"> Empati</label>
+                <label><input type="checkbox" name="improvement" value="problem-solving"> Kemampuan Pemecahan
+                    Masalah</label>
+                <label><input type="checkbox" name="improvement" value="follow-up"> Tindak Lanjut</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Komentar Tambahan:</label>
+                <textarea id="comments" name="comments"
+                          placeholder="Berikan komentar atau saran kamu di sini"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit">Kirim</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -48,4 +48,4 @@ Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ---
 
-Dibuat oleh Muh Ridwan Sukri untuk mata kuliah Pemrograman Web Dasar, S1 PJJ Informatika, Universitas Siber Muhammadiyah
+Dibuat oleh Muh Ridwan Sukri untuk mata kuliah Pemrograman Web Dasar, S1 PJJ Informatika Universitas Siber Muhammadiyah
